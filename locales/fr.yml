@@ -1,3 +1,9 @@
 fr:
   hello: "Bonjour"
   job: "développeur web"
+  titles:
+    about:
+    skills:
+    jobs:
+    training:
+    extras: 

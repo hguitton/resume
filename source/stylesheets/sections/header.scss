@@ -1,0 +1,17 @@
+.header {
+  height: 80vh;
+}
+
+.navbar {
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--secondary-font);
+
+  .nav-element {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

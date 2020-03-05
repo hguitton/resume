@@ -1,3 +1,9 @@
 en:
   hello: "Hello"
   job: "web developer"
+  titles:
+    about: "About me"
+    skills: "Skills"
+    jobs: "Experience"
+    training: 
+    extras: 
