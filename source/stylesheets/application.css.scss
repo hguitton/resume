@@ -27,7 +27,6 @@ body {
   color: var(--white);
   font-size: var(--font-size);
   font-family: var(--secondary-font);
-
   padding-left: 25%;
   padding-right: 25%;
   @media screen and (max-width: 576px) {
@@ -40,7 +39,34 @@ body i {
   font-family:'FontAwesome'!important;
 }
 
+p {
+  line-height: 1.8;
+}
+
 a, a:link, a:visited, a:focus, a:hover, a:active{
   color: inherit;
   text-decoration:none; 
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--yellow);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 }

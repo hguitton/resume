@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 80vh;
 }
 
@@ -13,6 +14,9 @@
   .nav-element {
     padding-left: 30px;
     padding-right: 30px;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -26,9 +30,13 @@
   color: var(--dark);
   transform: translateY(-100%);
   transition: transform .3s;
-
+  z-index: 2;
   a {
     font-size: 2rem;
+  }
+
+  .menu-logo {
+    right: 1.5rem;
   }
 }
 
@@ -39,5 +47,5 @@
 .menu-logo {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 0;
 }
