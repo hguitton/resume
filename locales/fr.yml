@@ -2,8 +2,8 @@ fr:
   hello: "Bonjour"
   job: "développeur web"
   titles:
-    about:
-    skills:
-    jobs:
-    training:
-    extras: 
+    about: "À propos"
+    skills: "Compétences"
+    jobs: "Expériences"
+    education: "Formation"
+    hobbies: "Hobbies"
