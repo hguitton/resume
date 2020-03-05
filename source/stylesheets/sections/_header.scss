@@ -1,0 +1,45 @@
+.header {
+  height: 80vh;
+}
+
+.navbar {
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--secondary-font);
+
+  .nav-element {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:var(--white);
+  color: var(--dark);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform .5s;
+
+  a {
+    font-size: 2rem;
+  }
+}
+
+.menu-mobile-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-logo {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}

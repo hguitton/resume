@@ -2,12 +2,14 @@
 author: "Hugo"
 ---
 
+
 .header.flex.aic.jcfe
+  .menu-logo.fa.fa-bars.fa-2x.yellow#open-menu
   .flex.fdc.aife
     h1.h1.yellow.bold.uppercase.m-b-none = data.content.perso.name
     h4.h4.m-none = t(:job)
-  
-  .navbar.flex.jcc
+
+  .navbar.flex.jcc.hidden-sm
     .nav-element
       a href="#" = t('titles.about')
     .nav-element
@@ -18,3 +20,11 @@ author: "Hugo"
       a href="#" = t('titles.education')
     .nav-element
       a href="#" = t('titles.hobbies')
+  
+  .menu-mobile.flex.fdc.jcc.aic#menu-mobile
+    .menu-logo.dark-lighter.fa.fa-2x.fa-times#close-menu
+    a.dark-lighter.m-b-lg href="#" = t('titles.about')
+    a.dark-lighter.m-b-lg href="#" = t('titles.skills')
+    a.dark-lighter.m-b-lg href="#" = t('titles.jobs')
+    a.dark-lighter.m-b-lg href="#" = t('titles.education')
+    a.dark-lighter href="#" = t('titles.hobbies')

@@ -1,12 +1,10 @@
 $max-screen-sm: 576px;
 
 @import 'reset.css';
-@import 'utilities.scss';
-@import 'spacing.scss';
-@import 'flex.scss';
 @import 'fonts.scss';
-
-@import './sections/header.scss';
+@import 'utilities/index';
+@import 'sections/index';
+@import "vendor/index";
 
 :root {
   --dark: #303841;
@@ -18,7 +16,7 @@ $max-screen-sm: 576px;
   --secondary-font: Montserrat;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $max-screen-sm) {
   :root {
     --font-size: 12px;
   }
@@ -29,10 +27,20 @@ body {
   color: var(--white);
   font-size: var(--font-size);
   font-family: var(--secondary-font);
+
   padding-left: 25%;
   padding-right: 25%;
   @media screen and (max-width: 576px) {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+body i {
+  font-family:'FontAwesome'!important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  color: inherit;
+  text-decoration:none; 
 }

@@ -16,6 +16,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 
+set :fonts_dir,  "fonts"
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

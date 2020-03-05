@@ -18,6 +18,38 @@
   font-family: var(--primary-font);
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden-sm.hidden-sm {
+  @media screen and (max-width: $max-screen-sm) {
+    display: none;
+  }
+}
+
+.hidden-md.hidden-md {
+  @media screen and (min-width: $max-screen-sm) {
+    display: none;
+  }
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.dark-lighter{
+  color: var(--dark-lighter);
+}
+
+.white {
+  color: var(--white);
+}
+
 .yellow {
   color: var(--yellow);
 }
@@ -31,7 +63,6 @@
 }
 
 a {
-  color: var(--white);
   text-decoration: none;
   position: relative;
   
