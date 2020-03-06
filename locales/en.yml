@@ -7,3 +7,10 @@ en:
     jobs: "Experience"
     education: "Education"
     hobbies: "Hobbies"
+  skills:
+    other: "Other :"
+    other-list: "PostgreSQL, MySQL, Dokku, Middleman, Webpack, WordPress"
+    languages: "Languages :"
+    languages-list:
+      - name: "French (native)"
+      - name: "English (TOEIC 960)"

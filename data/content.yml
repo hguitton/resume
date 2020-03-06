@@ -1,2 +1,18 @@
 perso:
   name: "Hugo Guitton"
+skills:
+  - 
+    name: "Ruby on Rails"
+    value: 90
+  - 
+    name: "PHP"
+    value: 40
+  - 
+    name: "HTML/CSS"
+    value: 80
+  - 
+    name: "VueJS"
+    value: 40
+  - 
+    name: "Javascript"
+    value: 75

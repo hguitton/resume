@@ -1,0 +1,35 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+  
+  @media screen and (max-width: $max-screen-sm) {
+    grid-template-columns:repeat(1, 1fr);
+  }
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+
+
+  .skill-bar {
+    position: relative;
+    background-color: var(--yellow);
+    width: 50%;
+    height: 14px;
+    border-radius: .3em;
+    margin-left: auto;
+  }
+  
+  .progress {
+    position: relative;
+    background-color: var(--dark-lighter);
+    border-radius: .1em;
+    height: 10px;
+    top: 2px;
+    left: 2px;
+    border-radius: .2em;
+  }
+}

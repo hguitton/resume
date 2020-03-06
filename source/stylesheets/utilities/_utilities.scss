@@ -1,3 +1,10 @@
+@for $i from 1 through 20 {
+  $value: $i * 5;
+  .w-#{$value} {
+    width: percentage($value/100);
+  }
+}
+
 .h1 {
   font-size: 3.5em;
   font-family: var(--primary-font);
