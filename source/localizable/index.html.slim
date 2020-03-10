@@ -6,9 +6,11 @@ author: "Hugo"
   .menu-logo.dark-lighter.fa.fa-2x.fa-times#close-menu
   a.dark-lighter.m-b-lg href="#" = t('titles.about')
   a.dark-lighter.m-b-lg href="#" = t('titles.skills')
-  a.dark-lighter.m-b-lg href="#" = t('titles.jobs')
+  a.dark-lighter.m-b-lg href="#" = t('titles.experience')
   a.dark-lighter.m-b-lg href="#" = t('titles.education')
-  a.dark-lighter href="#" = t('titles.hobbies')
+  a.dark-lighter.m-b-lg href="#" = t('titles.hobbies')
+  a.dark-lighter.m-b-lg href="/en" EN
+  a.dark-lighter href="/" FR
 
 .main
   .header.flex.aic.jcfe.m-b-xxl
@@ -27,14 +29,19 @@ author: "Hugo"
         a href="#" = t('titles.education')
       .nav-element
         a href="#" = t('titles.hobbies')
+      .nav-element
+        .flex
+          a.dark-lighter href="/en" EN
+          | /
+          a.dark-lighter href="/" FR
 
   .flex.fdc
-    .about
+    .about#about
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
         i.title-icon.fa.fa-comments.fa-5x.dark-lighter
       p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
-    .skills.m-t-xl
+    .skills.m-t-xl#skills
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.skills')
         i.title-icon.fa.fa-code.fa-5x.dark-lighter
@@ -52,18 +59,18 @@ author: "Hugo"
         strong.m-r-md = t('skills.languages')
         - t('skills.languages-list').each do |l|
           p.m-l-sm = l[:name]
-    .jobs.m-t-xl
+    .experience.m-t-xl#experience
       .title
-        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.jobs')
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.experience')
         i.title-icon.fa.fa-briefcase.fa-5x.dark-lighter
       .timeline-grid
-        - t('jobs').each do |j|
+        - t('experience').each do |j|
           .yellow.bold.uppercase.m-t-md = j[:dates]
           .flex.fdc
             .bold.uppercase.m-b-sm = j[:title]
             .m-b-sm.opacity-50 = j[:company]
             p = j[:content]
-    .education.m-t-xl
+    .education.m-t-xl#
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.education')
         i.title-icon.fa.fa-graduation-cap.fa-5x.dark-lighter

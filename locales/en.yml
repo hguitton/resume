@@ -4,7 +4,7 @@ en:
   titles:
     about: "About me"
     skills: "Skills"
-    jobs: "Experience"
+    experience: "Experience"
     education: "Education"
     hobbies: "Hobbies"
   skills:
@@ -14,7 +14,7 @@ en:
     languages-list:
       - name: "French (native)"
       - name: "English (TOEIC 960)"
-  jobs: 
+  experience: 
     - 
       dates: "May 2018 - Dec. 2019"
       title: "Ruby on rails dev."

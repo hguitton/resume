@@ -4,7 +4,7 @@ fr:
   titles:
     about: "À propos"
     skills: "Compétences"
-    jobs: "Expériences"
+    experience: "Expériences"
     education: "Formation"
     hobbies: "Hobbies"
   skills:
@@ -14,7 +14,7 @@ fr:
     languages-list:
       - name: "- Français (langue maternelle)"
       - name: "- Anglais (TOEIC 960)"
-  jobs: 
+  experience: 
     - 
       dates: "Mai 2018 - Dec. 2019"
       title: "Ruby on rails dev."
