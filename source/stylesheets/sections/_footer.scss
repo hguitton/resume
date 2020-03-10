@@ -1,4 +1,7 @@
 .footer {
   background-color: var(--yellow);
   height: 20vh;
+  div:first-child {
+    height: 100%;
+  }
 }
