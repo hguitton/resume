@@ -1,0 +1,4 @@
+[submodule "build/hguitton.github.io"]
+	path = build/hguitton.github.io
+	url = https://github.com/hguitton/hguitton.github.io.git
+	branch = master

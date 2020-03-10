@@ -1,6 +1,9 @@
 .header {
   position: relative;
   height: 80vh;
+  @media screen and (max-width: $max-screen-sm) {
+    height: 100vh;
+  }
 }
 
 .navbar {
