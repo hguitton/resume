@@ -55,10 +55,26 @@ author: "Hugo"
     .title
       h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.jobs')
       i.title-icon.fa.fa-briefcase.fa-5x.dark-lighter
-    .jobs-grid
+    .timeline-grid
       - t('jobs').each do |j|
         .yellow.bold.uppercase.m-t-md = j[:dates]
         .flex.fdc
           .bold.uppercase.m-b-sm = j[:title]
           .m-b-sm.opacity-50 = j[:company]
           p = j[:content]
+  .education.m-t-xl
+    .title
+      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.education')
+      i.title-icon.fa.fa-graduation-cap.fa-5x.dark-lighter
+    .timeline-grid
+      - t('education').each do |t|
+        .yellow.bold.uppercase.m-t-md = t[:dates]
+        .flex.fdc
+          .bold.uppercase.m-b-sm = t[:title]
+          .m-b-sm.opacity-50 = t[:company]
+          p = t[:content]
+  .extras.m-t-xl
+    .title
+      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.hobbies')
+    .extras-grid
+      

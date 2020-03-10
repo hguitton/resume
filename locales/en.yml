@@ -35,3 +35,16 @@ en:
       title: "Internship"
       company: "EBPLO"
       content: "Created a web app to manage the teams rosters and communication between teams (Laravel, PHP)"
+  education:
+    - 
+      dates: "Sept. 2014 - Oct. 2017"
+      title: "Exia.cesi"
+      content: "Degree : Software engineering and project management."
+    - 
+      dates: "Sept. 2012 - July 2014"
+      title: "(BTS IRIS) BTEC HIGHER NATIONAL DIPLOMA"
+      content: "Degree : IT and network for industrial companies <br/> SEMSO - Specialised in the manufacturing of customised robots."
+    - 
+      dates: "June 2012"
+      title: "BAC STI"
+      content: "BAC STI - electronic"

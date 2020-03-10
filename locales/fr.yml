@@ -27,12 +27,25 @@ fr:
         </br>  - Déploiement
       "
     - 
-      dates: "Fev 2017 - Juil. 2017"
+      dates: "Fev. 2017 - Juil. 2017"
       title: "Stage"
       company: "JungleCoders"
       content: "Initiation Ruby on Rails : developpement d’une plateforme de recrutement."
     - 
-      dates: "Jan 2016 - Avr. 2016"
+      dates: "Jan. 2016 - Avr. 2016"
       title: "Stage"
       company: "EBPLO"
       content: "Developpement d’une plateforme de communication interne et de gestion des effectifs du club. (Laravel, PHP)"
+  education:
+    - 
+      dates: "Sept. 2014 - Oct. 2017"
+      title: "Exia.cesi"
+      content: "Diplôme : Manager en systèmes d’information."
+    - 
+      dates: "Sept. 2012 - Juil. 2014"
+      title: "BTS IRIS - Alternance"
+      content: "BTS Informatique et Réseaux en alternance chez SEMSO (conception de machines industrielles)"
+    - 
+      dates: "Juin 2012"
+      title: "BAC STI"
+      content: "Bac STI option électronique."
