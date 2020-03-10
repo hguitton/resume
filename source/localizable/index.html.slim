@@ -10,71 +10,80 @@ author: "Hugo"
   a.dark-lighter.m-b-lg href="#" = t('titles.education')
   a.dark-lighter href="#" = t('titles.hobbies')
 
-.header.flex.aic.jcfe.m-b-xxl
-  .menu-logo.fa.fa-bars.fa-2x.yellow.hidden-md#open-menu
-  .flex.fdc.aife
-    h1.h1.yellow.bold.uppercase.m-b-none = data.content.perso.name
-    h4.h4.m-none = t(:job)
-  .navbar.flex.jcc.hidden-sm
-    .nav-element
-      a href="#" = t('titles.about')
-    .nav-element
-      a href="#" = t('titles.skills')
-    .nav-element
-      a href="#" = t('titles.jobs')
-    .nav-element
-      a href="#" = t('titles.education')
-    .nav-element
-      a href="#" = t('titles.hobbies')
-  
-.flex.fdc
-  .about
-    .title
-      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
-      i.title-icon.fa.fa-comments.fa-5x.dark-lighter
-    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
-  .skills.m-t-xl
-    .title
-      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.skills')
-      i.title-icon.fa.fa-code.fa-5x.dark-lighter
-    .skills-grid
-      - data.content.skills.each do |skill|
-        .skill
-          strong.m-r-md = skill.name
-          .skill-bar
-            .progress class="w-#{skill.value}"
-      .flex.aifs
-        p 
-          strong.m-r-sm = t('skills.other') 
-          = t('skills.other-list')
-    .flex.fdc.m-t-lg
-      strong.m-r-md = t('skills.languages')
-      - t('skills.languages-list').each do |l|
-        p.m-l-sm = l[:name]
-  .jobs.m-t-xl
-    .title
-      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.jobs')
-      i.title-icon.fa.fa-briefcase.fa-5x.dark-lighter
-    .timeline-grid
-      - t('jobs').each do |j|
-        .yellow.bold.uppercase.m-t-md = j[:dates]
-        .flex.fdc
-          .bold.uppercase.m-b-sm = j[:title]
-          .m-b-sm.opacity-50 = j[:company]
-          p = j[:content]
-  .education.m-t-xl
-    .title
-      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.education')
-      i.title-icon.fa.fa-graduation-cap.fa-5x.dark-lighter
-    .timeline-grid
-      - t('education').each do |t|
-        .yellow.bold.uppercase.m-t-md = t[:dates]
-        .flex.fdc
-          .bold.uppercase.m-b-sm = t[:title]
-          .m-b-sm.opacity-50 = t[:company]
-          p = t[:content]
-  .extras.m-t-xl
-    .title
-      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.hobbies')
-    .extras-grid
-      
+.main
+  .header.flex.aic.jcfe.m-b-xxl
+    .menu-logo.fa.fa-bars.fa-2x.yellow.hidden-md#open-menu
+    .flex.fdc.aife
+      h1.h1.yellow.bold.uppercase.m-b-none = data.content.perso.name
+      h4.h4.m-none = t(:job)
+    .navbar.flex.jcc.hidden-sm
+      .nav-element
+        a href="#" = t('titles.about')
+      .nav-element
+        a href="#" = t('titles.skills')
+      .nav-element
+        a href="#" = t('titles.jobs')
+      .nav-element
+        a href="#" = t('titles.education')
+      .nav-element
+        a href="#" = t('titles.hobbies')
+
+  .flex.fdc
+    .about
+      .title
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
+        i.title-icon.fa.fa-comments.fa-5x.dark-lighter
+      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
+    .skills.m-t-xl
+      .title
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.skills')
+        i.title-icon.fa.fa-code.fa-5x.dark-lighter
+      .skills-grid
+        - data.content.skills.each do |skill|
+          .skill
+            strong.m-r-md = skill.name
+            .skill-bar
+              .progress class="w-#{skill.value}"
+        .flex.aifs
+          p 
+            strong.m-r-sm = t('skills.other') 
+            = t('skills.other-list')
+      .flex.fdc.m-t-lg
+        strong.m-r-md = t('skills.languages')
+        - t('skills.languages-list').each do |l|
+          p.m-l-sm = l[:name]
+    .jobs.m-t-xl
+      .title
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.jobs')
+        i.title-icon.fa.fa-briefcase.fa-5x.dark-lighter
+      .timeline-grid
+        - t('jobs').each do |j|
+          .yellow.bold.uppercase.m-t-md = j[:dates]
+          .flex.fdc
+            .bold.uppercase.m-b-sm = j[:title]
+            .m-b-sm.opacity-50 = j[:company]
+            p = j[:content]
+    .education.m-t-xl
+      .title
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.education')
+        i.title-icon.fa.fa-graduation-cap.fa-5x.dark-lighter
+      .timeline-grid
+        - t('education').each do |t|
+          .yellow.bold.uppercase.m-t-md = t[:dates]
+          .flex.fdc
+            .bold.uppercase.m-b-sm = t[:title]
+            .m-b-sm.opacity-50 = t[:company]
+            p = t[:content]
+    .extras.m-t-xl
+      .title
+        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.hobbies') 
+      .extras-grid
+        - t('hobbies').each do |t|
+          .flex.fdc.aic
+            i.fa.fa-5x class="#{t[:icon]}"
+            .m-t-md = t[:name]
+.footer.m-t-xl.flex.aic.jcc
+  a href="https://github.com/hguitton" 
+    i.fa.fa-github.fa-3x.dark.m-r-xl
+  a href="mailto:guitton.h@gmail.com" 
+    i.fa.fa-envelope.fa-3x.dark.m-l-xl

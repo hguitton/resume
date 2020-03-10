@@ -48,3 +48,16 @@ en:
       dates: "June 2012"
       title: "BAC STI"
       content: "BAC STI - electronic"
+  hobbies:
+    - 
+      name: "Basketball"
+      icon: "fa-dribbble"
+    - 
+      name: "Travel"
+      icon: "fa-suitcase"
+    - 
+      name: "Photography"
+      icon: "fa-camera"
+    - 
+      name: "TV Shows"
+      icon: "fa-tv"

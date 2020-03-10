@@ -27,16 +27,19 @@ body {
   color: var(--white);
   font-size: var(--font-size);
   font-family: var(--secondary-font);
+}
+
+body i {
+  font-family:'FontAwesome'!important;
+}
+
+.main {
   padding-left: 20%;
   padding-right: 20%;
   @media screen and (max-width: 576px) {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-body i {
-  font-family:'FontAwesome'!important;
 }
 
 p {

@@ -49,3 +49,16 @@ fr:
       dates: "Juin 2012"
       title: "BAC STI"
       content: "Bac STI option électronique."
+  hobbies:
+    - 
+      name: "Basketball"
+      icon: "fa-dribbble"
+    - 
+      name: "Voyage"
+      icon: "fa-suitcase"
+    - 
+      name: "Photographie"
+      icon: "fa-camera"
+    - 
+      name: "Séries TV"
+      icon: "fa-tv"
