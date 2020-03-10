@@ -14,3 +14,24 @@ en:
     languages-list:
       - name: "French (native)"
       - name: "English (TOEIC 960)"
+  jobs: 
+    - 
+      dates: "May 2018 - Dec. 2019"
+      title: "Ruby on rails dev."
+      company: "Luvotels (Instant booking solution for love hotels)"
+      content: "
+        Main tasks :
+        </br>  - Coding new features (frontend & backend)
+        </br>  - New design integration
+        </br>  - Bug fixing
+        </br>  - Deployment"
+    - 
+      dates: "Feb 2017 - July 2017"
+      title: "Internship"
+      company: "JungleCoders"
+      content: "Ruby on Rails : creating an recruiting/onboarding web app."
+    - 
+      dates: "Jan 2016 - Avr. 2016"
+      title: "Internship"
+      company: "EBPLO"
+      content: "Created a web app to manage the teams rosters and communication between teams (Laravel, PHP)"

@@ -30,12 +30,12 @@ author: "Hugo"
 .flex.fdc
   .about
     .title
-      h1.h1.yellow.bold.uppercase.m-b-lg = t('titles.about')
+      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
       i.title-icon.fa.fa-comments.fa-5x.dark-lighter
     p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
   .skills.m-t-xl
     .title
-      h1.h1.yellow.bold.uppercase.m-b-lg = t('titles.skills')
+      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.skills')
       i.title-icon.fa.fa-code.fa-5x.dark-lighter
     .skills-grid
       - data.content.skills.each do |skill|
@@ -51,3 +51,14 @@ author: "Hugo"
       strong.m-r-md = t('skills.languages')
       - t('skills.languages-list').each do |l|
         p.m-l-sm = l[:name]
+  .jobs.m-t-xl
+    .title
+      h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.jobs')
+      i.title-icon.fa.fa-briefcase.fa-5x.dark-lighter
+    .jobs-grid
+      - t('jobs').each do |j|
+        .yellow.bold.uppercase.m-t-md = j[:dates]
+        .flex.fdc
+          .bold.uppercase.m-b-sm = j[:title]
+          .m-b-sm.opacity-50 = j[:company]
+          p = j[:content]

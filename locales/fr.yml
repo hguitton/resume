@@ -14,3 +14,25 @@ fr:
     languages-list:
       - name: "- Français (langue maternelle)"
       - name: "- Anglais (TOEIC 960)"
+  jobs: 
+    - 
+      dates: "Mai 2018 - Dec. 2019"
+      title: "Ruby on rails dev."
+      company: "Luvotels (Plateforme de réservation de motels au Brésil)"
+      content: "
+        Principales missions :
+        </br>  - Développement de nouvelles features (backend et frontend)
+        </br>  - Intégration du nouveau design
+        </br>  - Résolution de bugs
+        </br>  - Déploiement
+      "
+    - 
+      dates: "Fev 2017 - Juil. 2017"
+      title: "Stage"
+      company: "JungleCoders"
+      content: "Initiation Ruby on Rails : developpement d’une plateforme de recrutement."
+    - 
+      dates: "Jan 2016 - Avr. 2016"
+      title: "Stage"
+      company: "EBPLO"
+      content: "Developpement d’une plateforme de communication interne et de gestion des effectifs du club. (Laravel, PHP)"
