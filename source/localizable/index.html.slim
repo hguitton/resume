@@ -4,11 +4,11 @@ author: "Hugo"
 
 .menu-mobile.flex.fdc.jcc.aic#menu-mobile
   .menu-logo.dark-lighter.fa.fa-2x.fa-times#close-menu
-  a.dark-lighter.m-b-lg href="#" = t('titles.about')
-  a.dark-lighter.m-b-lg href="#" = t('titles.skills')
-  a.dark-lighter.m-b-lg href="#" = t('titles.experience')
-  a.dark-lighter.m-b-lg href="#" = t('titles.education')
-  a.dark-lighter.m-b-lg href="#" = t('titles.hobbies')
+  / a.dark-lighter.m-b-lg href="#" = t('titles.about')
+  a.scroll.dark-lighter.m-b-lg href="#skills" = t('titles.skills')
+  a.scroll.dark-lighter.m-b-lg href="#experience" = t('titles.experience')
+  a.scroll.dark-lighter.m-b-lg href="#education" = t('titles.education')
+  a.scroll.dark-lighter.m-b-lg href="#hobbies" = t('titles.hobbies')
   a.dark-lighter.m-b-lg href="/en" EN
   a.dark-lighter href="/" FR
 
@@ -19,16 +19,16 @@ author: "Hugo"
       h1.h1.yellow.bold.uppercase.m-b-none = data.content.perso.name
       h4.h4.m-none = t(:job)
     .navbar.flex.jcc.hidden-sm
+      / .nav-element
+      /   a href="#" = t('titles.about')
       .nav-element
-        a href="#" = t('titles.about')
+        a.scroll href="#skills" = t('titles.skills')
       .nav-element
-        a href="#" = t('titles.skills')
+        a.scroll href="#experience" = t('titles.experience')
       .nav-element
-        a href="#" = t('titles.jobs')
+        a.scroll href="#education" = t('titles.education')
       .nav-element
-        a href="#" = t('titles.education')
-      .nav-element
-        a href="#" = t('titles.hobbies')
+        a.scroll href="#hobbies" = t('titles.hobbies')
       .nav-element
         .flex
           a.dark-lighter href="/en" EN
@@ -36,11 +36,11 @@ author: "Hugo"
           a.dark-lighter href="/" FR
 
   .flex.fdc
-    .about#about
-      .title
-        h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
-        i.title-icon.fa.fa-comments.fa-5x.dark-lighter
-      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
+    / .about#about
+    /   .title
+    /     h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.about')
+    /     i.title-icon.fa.fa-comments.fa-5x.dark-lighter
+    /   p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi quos quae molestiae necessitatibus tempora facilis vitae aperiam expedita neque, quaerat natus. Tempore expedita perspiciatis nemo commodi eius, ex eligendi?
     .skills.m-t-xl#skills
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.skills')
@@ -70,7 +70,7 @@ author: "Hugo"
             .bold.uppercase.m-b-sm = j[:title]
             .m-b-sm.opacity-50 = j[:company]
             p = j[:content]
-    .education.m-t-xl#
+    .education.m-t-xl#education
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.education')
         i.title-icon.fa.fa-graduation-cap.fa-5x.dark-lighter
@@ -81,7 +81,7 @@ author: "Hugo"
             .bold.uppercase.m-b-sm = t[:title]
             .m-b-sm.opacity-50 = t[:company]
             p = t[:content]
-    .extras.m-t-xl
+    .extras.m-t-xl#hobbies
       .title
         h1.h1.yellow.bold.uppercase.m-b-xl = t('titles.hobbies') 
       .extras-grid
