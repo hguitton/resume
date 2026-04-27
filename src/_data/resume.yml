@@ -5,100 +5,102 @@
 #   "shipped *boldly*"  →  "shipped <em>boldly</em>" (rendered in accent color).
 # ─────────────────────────────────────────────────────────────────────────────
 
-name: "Adrien Marchand"
-role: "Senior Software Developer"
-location: "Paris, France"
-email: "hello@adrienmarchand.dev"
-site: "adrienmarchand.dev"
-github: "github.com/amarchand"
-twitter: "@amarchand"
+name: "Hugo Guitton"
+role: "Rails Freelance Developer"
+location: "France"
+email: "hugo@guitton.dev"
+site: "hugo.guitton.dev"
+github: "github.com/hguitton"
 years: 9
+year: "2026"
 
 # Top-of-page status pill ("● Available, May 2026 onwards")
 availability: "Available, May 2026 onwards"
 
 # Hero headline. Use *asterisks* for the accent-colored italic emphasis.
-headline: "Software, written *slowly*, shipped *boldly*."
+headline: "Rails, written *carefully*,// shipped *pragmatically*."
 
 intro:
-  short: "I build software with care for craft, speed, and the people who use it."
+  short: "I build Rails applications with care for craft, conventions, and the people who use them."
   long: >
-    I'm a developer based in Paris with nearly a decade of experience shipping
-    web applications, design tools, and developer infrastructure. I care about
-    the seams where engineering meets design — interfaces that feel deliberate,
-    systems that age gracefully, and prototypes that argue clearly. I write a
-    lot, mentor when I can, and run on espresso and long walks.
+    I'm a freelance Rails developer based in France with nearly a decade of
+    experience shipping web applications end-to-end. I lean on Rails
+    conventions, Hotwire for snappy interfaces, and Postgres for sturdy
+    foundations. I care about clean models, fast tests, and code that the
+    next person — including future me — can read without flinching.
 
 currently: >
-  Building developer tools at an early-stage startup. Open to occasional
-  consulting on design-engineering collaboration.
+  Available for Rails freelance engagements: greenfield builds, Rails
+  upgrades, Hotwire migrations, and rescue projects.
 
 skills:
-  Languages: ["TypeScript", "Python", "Go", "Rust", "SQL", "Swift"]
-  Frameworks: ["React", "Next.js", "Node.js", "FastAPI", "Tailwind", "Three.js", "tRPC"]
-  Platforms: ["Postgres", "Redis", "AWS", "Vercel", "Docker", "Kubernetes"]
-  Practice: ["Design systems", "Prototyping", "Type & layout", "Performance", "Accessibility", "Mentorship"]
+  Languages: ["Ruby", "PHP", "JavaScript", "SQL", "HTML", "CSS"]
+  Frameworks: ["Rails 8", "Laravel", "Hotwire (Turbo + Stimulus)", "ViewComponent", "Tailwind CSS", "DaisyUI"]
+  Platforms: ["PostgreSQL", "Redis", "Solid Queue", "Solid Cache", "Kamal", "Docker"]
+  Practice: ["RSpec & FactoryBot", "Service objects", "Performance tuning", "API design"]
 
 experience:
-  - role: "Senior Software Developer"
-    company: "Lattice Studio"
+  - role: "Rails Freelance Developer"
+    company: "Independent"
     period: "2023 — Present"
-    location: "Remote"
+    location: "Remote, France"
     blurb: >
-      Lead developer on a real-time collaborative whiteboard. Rebuilt the
-      rendering core for 10× more elements per board and shipped a public
-      plugin SDK now used by 40+ teams.
+      Building and rescuing Rails applications for startups and product
+      teams. Recent work spans Rails 7 → 8 upgrades, Hotwire migrations
+      away from heavy SPAs, and Solid Queue rollouts replacing legacy
+      Sidekiq setups.
 
-  - role: "Full-stack Developer"
+  - role: "Senior Rails Developer"
     company: "Northwind Labs"
     period: "2020 — 2023"
-    location: "Berlin"
+    location: "Paris"
     blurb: >
-      Built the design-tools group's prototyping platform from scratch.
-      Owned API surface, the React component library, and the offline-first
-      sync engine.
+      Led the backend on a B2B SaaS platform. Owned the Rails monolith,
+      Postgres schema, and background job pipeline. Introduced
+      ViewComponent and Turbo Frames to replace a tangle of jQuery and
+      cut median page loads in half.
 
-  - role: "Frontend Developer"
+  - role: "Full-stack Rails Developer"
     company: "Glasshouse"
     period: "2018 — 2020"
     location: "Paris"
     blurb: >
-      Shipped marketing sites and editorial experiences for cultural
-      institutions. Embedded with the design team to translate art direction
-      into responsive, performant code.
+      Shipped Rails applications and editorial platforms for cultural
+      institutions. Worked closely with designers to translate art
+      direction into responsive, accessible Rails views.
 
-  - role: "Junior Developer"
+  - role: "Junior Rails Developer"
     company: "Atelier Cinq"
     period: "2017 — 2018"
     location: "Paris"
     blurb: >
-      First role. Learned to ship, learned to listen, learned that the
-      comma in a date format matters.
+      First role. Learned Rails conventions, the value of a green test
+      suite, and that the comma in a date format matters.
 
 projects:
   - name: "Foliage"
     year: "2025"
     kind: "Open source"
     url: "#"
-    blurb: "A typographic note-taking app with first-class footnotes, marginalia, and reference linking. 4.2k stars on GitHub."
+    blurb: "A Rails + Hotwire note-taking app with first-class footnotes, marginalia, and reference linking. Built on Turbo Streams and ViewComponent."
 
   - name: "Sundial"
     year: "2024"
     kind: "Side project"
     url: "#"
-    blurb: "A small macOS app that turns your calendar into an analog day. Featured on Sidebar and Hacker News."
+    blurb: "A small Rails app that turns your calendar into an analog day. Powered by Hotwire, Stimulus, and a stubbornly tiny JavaScript bundle."
 
   - name: "Press Gazette"
     year: "2023"
     kind: "Client work"
     url: "#"
-    blurb: "Editorial CMS and reading experience for a long-form journalism magazine. 12% lift in average session length."
+    blurb: "Editorial CMS for a long-form journalism magazine. Rails 7, Postgres full-text search, Action Text. 12% lift in average session length."
 
   - name: "Slow Internet"
     year: "2022"
     kind: "Essay series"
     url: "#"
-    blurb: "Six-essay series on the texture of the modern web. Translated into three languages."
+    blurb: "Six-essay series on server-rendered web craft and the case for Hotwire. Translated into three languages."
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Theme — visual tweaks for Direction A "The Column".
@@ -106,7 +108,7 @@ projects:
 theme:
   # Accent color used for emphasis, links, numerals.
   # One of: orange, olive, clay, ink — or any custom hex like "#c25b2c".
-  accent: "clay"
+  accent: "#800020"
 
   # Display serif used for headings.
   # One of: "Fraunces", "Instrument Serif", "EB Garamond"

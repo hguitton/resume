@@ -7,7 +7,7 @@ permalink: /
 <%# ── TOP NAVIGATION ─────────────────────────────────────────────────── %>
 <header class="top-nav">
   <div class="label tag">
-    <%= r.name %> · Portfolio · MMXXVI
+    <%= r.name %> · Portfolio · <%= r.year %>
   </div>
   <nav class="top-nav__links">
     <% r.nav.each do |item| %>
@@ -22,6 +22,7 @@ permalink: /
     <span class="hero__dot"></span>
     <span class="label"><%= r.availability %></span>
   </div>
+  <p class="label hero__kicker"><%= r.name %> <span class="hero__kicker-dash">—</span> <%= r.role %></p>
   <h1 class="display hero__headline"><%= emph r.headline %></h1>
   <div class="hero__grid" id="about">
     <p class="body hero__intro"><%= r.intro.long %></p>
@@ -114,11 +115,10 @@ permalink: /
     <div><span class="label contact__label">Email</span><a href="mailto:<%= r.email %>"><%= r.email %></a></div>
     <div><span class="label contact__label">Site</span><a href="https://<%= r.site %>"><%= r.site %></a></div>
     <div><span class="label contact__label">GitHub</span><a href="https://<%= r.github %>"><%= r.github %></a></div>
-    <div><span class="label contact__label">Twitter</span><a href="https://twitter.com/<%= r.twitter.delete('@') %>"><%= r.twitter %></a></div>
   </div>
 </footer>
 
 <div class="colophon">
-  <span class="label">© MMXXVI · <%= r.name %></span>
+  <span class="label">© <%= r.year %> · <%= r.name %></span>
   <span class="label">Set in <%= r.theme.display_font %> &amp; Inter</span>
 </div>

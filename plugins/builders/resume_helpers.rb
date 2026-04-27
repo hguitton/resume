@@ -13,7 +13,10 @@ class Builders::ResumeHelpers < SiteBuilder
 
     helper :emph do |text|
       escaped = Bridgetown::Utils.xml_escape(text.to_s)
-      escaped.gsub(/\*([^*]+)\*/) { "<em>#{Regexp.last_match(1)}</em>" }.html_safe
+      escaped
+        .gsub(/\*([^*]+)\*/) { "<em>#{Regexp.last_match(1)}</em>" }
+        .gsub("//", "<br>")
+        .html_safe
     end
   end
 end
