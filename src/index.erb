@@ -1,0 +1,124 @@
+---
+layout: resume
+permalink: /
+---
+<% r = site.data.resume %>
+
+<%# ── TOP NAVIGATION ─────────────────────────────────────────────────── %>
+<header class="top-nav">
+  <div class="label tag">
+    <%= r.name %> · Portfolio · MMXXVI
+  </div>
+  <nav class="top-nav__links">
+    <% r.nav.each do |item| %>
+      <a class="label" href="<%= item.href %>"><%= item.label %></a>
+    <% end %>
+  </nav>
+</header>
+
+<%# ── HERO ──────────────────────────────────────────────────────────── %>
+<section class="hero">
+  <div class="hero__status">
+    <span class="hero__dot"></span>
+    <span class="label"><%= r.availability %></span>
+  </div>
+  <h1 class="display hero__headline"><%= emph r.headline %></h1>
+  <div class="hero__grid" id="about">
+    <p class="body hero__intro"><%= r.intro.long %></p>
+    <aside class="hero__currently">
+      <div class="label">Currently</div>
+      <p class="marg"><%= r.currently %></p>
+    </aside>
+  </div>
+</section>
+
+<%# ── SKILLS ────────────────────────────────────────────────────────── %>
+<section class="block">
+  <div class="block__head">
+    <h2 class="display block__title">
+      <span class="num block__num">01</span>
+      What I work <em>with</em>
+    </h2>
+    <span class="label">Toolkit</span>
+  </div>
+  <hr class="rule" />
+  <div class="skills">
+    <% r.skills.each do |category, items| %>
+      <div class="label skills__cat"><%= category %></div>
+      <div class="skills__list">
+        <% items.each do |item| %>
+          <span class="pill"><%= item %></span>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<%# ── EXPERIENCE ────────────────────────────────────────────────────── %>
+<section class="block" id="work">
+  <div class="block__head">
+    <h2 class="display block__title">
+      <span class="num block__num">02</span>
+      Where I've <em>worked</em>
+    </h2>
+    <span class="label"><%= r.years %> years, <%= r.experience.size %> companies</span>
+  </div>
+  <hr class="rule rule--tight" />
+  <% r.experience.each_with_index do |job, i| %>
+    <div class="job <%= 'job--last' if i == r.experience.size - 1 %>">
+      <div class="num job__period"><%= job.period %></div>
+      <div class="job__main">
+        <h3 class="display job__title">
+          <%= job.role %> <span class="job__dash">—</span> <em><%= job.company %></em>
+        </h3>
+        <p class="body job__blurb"><%= job.blurb %></p>
+      </div>
+      <div class="marg job__location"><%= job.location %></div>
+    </div>
+  <% end %>
+</section>
+
+<%# ── PROJECTS ──────────────────────────────────────────────────────── %>
+<section class="block" id="projects">
+  <div class="block__head">
+    <h2 class="display block__title">
+      <span class="num block__num">03</span>
+      Selected <em>projects</em>
+    </h2>
+    <span class="label">A few things I'm proud of</span>
+  </div>
+  <hr class="rule rule--flush" />
+  <% r.projects.each_with_index do |p, i| %>
+    <a class="project" href="<%= p.url || '#' %>">
+      <span class="num project__num"><%= format("%02d", i + 1) %></span>
+      <div class="project__main">
+        <h3 class="display project__name"><%= p.name %></h3>
+        <p class="body project__blurb"><%= p.blurb %></p>
+      </div>
+      <div class="project__meta">
+        <div class="num"><%= p.year %></div>
+        <div class="marg project__kind"><%= p.kind %></div>
+      </div>
+      <div class="project__arrow">→</div>
+    </a>
+  <% end %>
+</section>
+
+<%# ── CONTACT FOOTER ────────────────────────────────────────────────── %>
+<footer class="contact" id="contact">
+  <div class="contact__title">
+    <div class="ornament">✻</div>
+    <h3 class="display contact__h">Let's <em>talk</em>.</h3>
+  </div>
+  <div class="contact__links">
+    <div><span class="label contact__label">Email</span><a href="mailto:<%= r.email %>"><%= r.email %></a></div>
+    <div><span class="label contact__label">Site</span><a href="https://<%= r.site %>"><%= r.site %></a></div>
+    <div><span class="label contact__label">GitHub</span><a href="https://<%= r.github %>"><%= r.github %></a></div>
+    <div><span class="label contact__label">Twitter</span><a href="https://twitter.com/<%= r.twitter.delete('@') %>"><%= r.twitter %></a></div>
+  </div>
+</footer>
+
+<div class="colophon">
+  <span class="label">© MMXXVI · <%= r.name %></span>
+  <span class="label">Set in <%= r.theme.display_font %> &amp; Inter</span>
+</div>

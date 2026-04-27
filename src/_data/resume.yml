@@ -1,0 +1,123 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Resume content — edit this file to update the site.
+#
+# Most string fields support inline emphasis with *asterisks*:
+#   "shipped *boldly*"  →  "shipped <em>boldly</em>" (rendered in accent color).
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: "Adrien Marchand"
+role: "Senior Software Developer"
+location: "Paris, France"
+email: "hello@adrienmarchand.dev"
+site: "adrienmarchand.dev"
+github: "github.com/amarchand"
+twitter: "@amarchand"
+years: 9
+
+# Top-of-page status pill ("● Available, May 2026 onwards")
+availability: "Available, May 2026 onwards"
+
+# Hero headline. Use *asterisks* for the accent-colored italic emphasis.
+headline: "Software, written *slowly*, shipped *boldly*."
+
+intro:
+  short: "I build software with care for craft, speed, and the people who use it."
+  long: >
+    I'm a developer based in Paris with nearly a decade of experience shipping
+    web applications, design tools, and developer infrastructure. I care about
+    the seams where engineering meets design — interfaces that feel deliberate,
+    systems that age gracefully, and prototypes that argue clearly. I write a
+    lot, mentor when I can, and run on espresso and long walks.
+
+currently: >
+  Building developer tools at an early-stage startup. Open to occasional
+  consulting on design-engineering collaboration.
+
+skills:
+  Languages: ["TypeScript", "Python", "Go", "Rust", "SQL", "Swift"]
+  Frameworks: ["React", "Next.js", "Node.js", "FastAPI", "Tailwind", "Three.js", "tRPC"]
+  Platforms: ["Postgres", "Redis", "AWS", "Vercel", "Docker", "Kubernetes"]
+  Practice: ["Design systems", "Prototyping", "Type & layout", "Performance", "Accessibility", "Mentorship"]
+
+experience:
+  - role: "Senior Software Developer"
+    company: "Lattice Studio"
+    period: "2023 — Present"
+    location: "Remote"
+    blurb: >
+      Lead developer on a real-time collaborative whiteboard. Rebuilt the
+      rendering core for 10× more elements per board and shipped a public
+      plugin SDK now used by 40+ teams.
+
+  - role: "Full-stack Developer"
+    company: "Northwind Labs"
+    period: "2020 — 2023"
+    location: "Berlin"
+    blurb: >
+      Built the design-tools group's prototyping platform from scratch.
+      Owned API surface, the React component library, and the offline-first
+      sync engine.
+
+  - role: "Frontend Developer"
+    company: "Glasshouse"
+    period: "2018 — 2020"
+    location: "Paris"
+    blurb: >
+      Shipped marketing sites and editorial experiences for cultural
+      institutions. Embedded with the design team to translate art direction
+      into responsive, performant code.
+
+  - role: "Junior Developer"
+    company: "Atelier Cinq"
+    period: "2017 — 2018"
+    location: "Paris"
+    blurb: >
+      First role. Learned to ship, learned to listen, learned that the
+      comma in a date format matters.
+
+projects:
+  - name: "Foliage"
+    year: "2025"
+    kind: "Open source"
+    url: "#"
+    blurb: "A typographic note-taking app with first-class footnotes, marginalia, and reference linking. 4.2k stars on GitHub."
+
+  - name: "Sundial"
+    year: "2024"
+    kind: "Side project"
+    url: "#"
+    blurb: "A small macOS app that turns your calendar into an analog day. Featured on Sidebar and Hacker News."
+
+  - name: "Press Gazette"
+    year: "2023"
+    kind: "Client work"
+    url: "#"
+    blurb: "Editorial CMS and reading experience for a long-form journalism magazine. 12% lift in average session length."
+
+  - name: "Slow Internet"
+    year: "2022"
+    kind: "Essay series"
+    url: "#"
+    blurb: "Six-essay series on the texture of the modern web. Translated into three languages."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Theme — visual tweaks for Direction A "The Column".
+# ─────────────────────────────────────────────────────────────────────────────
+theme:
+  # Accent color used for emphasis, links, numerals.
+  # One of: orange, olive, clay, ink — or any custom hex like "#c25b2c".
+  accent: "clay"
+
+  # Display serif used for headings.
+  # One of: "Fraunces", "Instrument Serif", "EB Garamond"
+  display_font: "EB Garamond"
+
+  # Layout density: dense | standard | airy
+  density: "standard"
+
+# Top navigation links (anchor links into the page).
+nav:
+  - { label: "Work",    href: "#work" }
+  - { label: "Projects", href: "#projects" }
+  - { label: "About",   href: "#about" }
+  - { label: "Contact", href: "#contact" }
