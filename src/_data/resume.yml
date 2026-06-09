@@ -11,11 +11,11 @@ location: "France"
 email: "hugo@guitton.dev"
 site: "hugo.guitton.dev"
 github: "github.com/hguitton"
-years: 9
+years: 8
 year: "2026"
 
 # Top-of-page status pill ("● Available, May 2026 onwards")
-availability: "Available, May 2026 onwards"
+availability: "Available"
 
 # Hero headline. Use *asterisks* for the accent-colored italic emphasis.
 headline: "Rails, written *carefully*,// shipped *pragmatically*."
@@ -35,72 +35,53 @@ currently: >
 
 skills:
   Languages: ["Ruby", "PHP", "JavaScript", "SQL", "HTML", "CSS"]
-  Frameworks: ["Rails 8", "Laravel", "Hotwire (Turbo + Stimulus)", "ViewComponent", "Tailwind CSS", "DaisyUI"]
+  Frameworks: ["Rails 8", "Laravel", "Hotwire (Turbo + Stimulus)", "ViewComponent", "Tailwind CSS"]
   Platforms: ["PostgreSQL", "Redis", "Solid Queue", "Solid Cache", "Kamal", "Docker"]
   Practice: ["RSpec & FactoryBot", "Service objects", "Performance tuning", "API design"]
 
 experience:
   - role: "Rails Freelance Developer"
     company: "Independent"
-    period: "2023 — Present"
+    period: "2018 — Present"
     location: "Remote, France"
     blurb: >
-      Building and rescuing Rails applications for startups and product
-      teams. Recent work spans Rails 7 → 8 upgrades, Hotwire migrations
-      away from heavy SPAs, and Solid Queue rollouts replacing legacy
-      Sidekiq setups.
-
-  - role: "Senior Rails Developer"
-    company: "Northwind Labs"
-    period: "2020 — 2023"
-    location: "Paris"
-    blurb: >
-      Led the backend on a B2B SaaS platform. Owned the Rails monolith,
-      Postgres schema, and background job pipeline. Introduced
-      ViewComponent and Turbo Frames to replace a tangle of jQuery and
-      cut median page loads in half.
+      I build and rescue Rails applications for startups and product 
+      teams—handling Rails 7 → 8 upgrades, Hotwire migrations away from 
+      heavy SPAs, REST API design, and helping early-stage teams ship MVPs fast.
 
   - role: "Full-stack Rails Developer"
-    company: "Glasshouse"
-    period: "2018 — 2020"
-    location: "Paris"
+    company: "Phiture"
+    period: "2021 — 2026"
+    location: "Remote"
     blurb: >
-      Shipped Rails applications and editorial platforms for cultural
-      institutions. Worked closely with designers to translate art
-      direction into responsive, accessible Rails views.
+      B.Layer : built and maintained a no-code mobile experience design 
+      tool that lets CRM and lifecycle teams create advanced in-app messages
+      without developer support. It combines a simple WYSIWYG editor with 
+      an advanced mode for custom styling, helping teams design, customize,
+      and launch on-brand campaigns faster.
 
   - role: "Junior Rails Developer"
-    company: "Atelier Cinq"
-    period: "2017 — 2018"
-    location: "Paris"
+    company: "Luvotels"
+    period: "2018 — 2019"
+    location: "Remote"
     blurb: >
-      First role. Learned Rails conventions, the value of a green test
-      suite, and that the comma in a date format matters.
+      First role. Learned the fundamentals—Rails conventions, the safety 
+      of a green test suite—while building reservation systems where 
+      availability, timing, and concurrency actually mattered.
 
 projects:
-  - name: "Foliage"
+  - name: "Operf"
     year: "2025"
-    kind: "Open source"
-    url: "#"
-    blurb: "A Rails + Hotwire note-taking app with first-class footnotes, marginalia, and reference linking. Built on Turbo Streams and ViewComponent."
+    kind: "SaaS"
+    url: "https://www.operf.fr/home"
+    blurb: "A basketball scouting platform that lets clubs build and maintain their own player databases—tracking prospects, monitoring performance, and centralizing scouting intelligence in one place."
 
-  - name: "Sundial"
-    year: "2024"
+  - name: "Sloty"
+    year: "2026"
     kind: "Side project"
-    url: "#"
-    blurb: "A small Rails app that turns your calendar into an analog day. Powered by Hotwire, Stimulus, and a stubbornly tiny JavaScript bundle."
+    url: "https://slotyapp.com/"
+    blurb: "An online booking platform built for small service businesses, enabling them to accept and manage customer appointments directly through their own booking pages."
 
-  - name: "Press Gazette"
-    year: "2023"
-    kind: "Client work"
-    url: "#"
-    blurb: "Editorial CMS for a long-form journalism magazine. Rails 7, Postgres full-text search, Action Text. 12% lift in average session length."
-
-  - name: "Slow Internet"
-    year: "2022"
-    kind: "Essay series"
-    url: "#"
-    blurb: "Six-essay series on server-rendered web craft and the case for Hotwire. Translated into three languages."
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Theme — visual tweaks for Direction A "The Column".
