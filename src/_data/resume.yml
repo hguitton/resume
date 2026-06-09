@@ -73,7 +73,7 @@ projects:
   - name: "Operf"
     year: "2025"
     kind: "SaaS"
-    url: "https://www.operf.fr/home"
+    url: "https://app.operf.fr/home"
     blurb: "A basketball scouting platform that lets clubs build and maintain their own player databases—tracking prospects, monitoring performance, and centralizing scouting intelligence in one place."
 
   - name: "Sloty"
