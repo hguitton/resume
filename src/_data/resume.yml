@@ -35,15 +35,15 @@ currently: >
 
 skills:
   Languages: ["Ruby", "PHP", "JavaScript", "SQL", "HTML", "CSS"]
-  Frameworks: ["Rails 8", "Laravel", "Hotwire (Turbo + Stimulus)", "ViewComponent", "Tailwind CSS"]
+  Frameworks: ["Ruby on Rails", "Laravel", "Hotwire (Turbo + Stimulus)", "ViewComponent", "Tailwind CSS"]
   Platforms: ["PostgreSQL", "Redis", "Solid Queue", "Solid Cache", "Kamal", "Docker"]
-  Practice: ["RSpec & FactoryBot", "Service objects", "Performance tuning", "API design"]
+  Practice: ["Minitest", "RSpec & FactoryBot", "Service objects", "Performance tuning", "API design"]
 
 experience:
   - role: "Rails Freelance Developer"
     company: "Independent"
     period: "2018 — Present"
-    location: "Remote, France"
+    location: "Remote"
     blurb: >
       I build and rescue Rails applications for startups and product 
       teams—handling Rails 7 → 8 upgrades, Hotwire migrations away from 

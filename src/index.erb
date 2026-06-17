@@ -62,7 +62,6 @@ permalink: /
       <span class="num block__num">02</span>
       Where I've <em>worked</em>
     </h2>
-    <span class="label"><%= r.years %> years, <%= r.experience.size %> companies</span>
   </div>
   <hr class="rule rule--tight" />
   <% r.experience.each_with_index do |job, i| %>
@@ -120,5 +119,4 @@ permalink: /
 
 <div class="colophon">
   <span class="label">© <%= r.year %> · <%= r.name %></span>
-  <span class="label">Set in <%= r.theme.display_font %> &amp; Inter</span>
 </div>
