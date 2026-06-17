@@ -11,7 +11,7 @@ permalink: /
   </div>
   <nav class="top-nav__links">
     <% r.nav.each do |item| %>
-      <a class="label" href="<%= item.href %>"><%= item.label %></a>
+      <a class="label" href="<%= item.href %>"<%= ' target="_blank" rel="noopener"' unless item.href.start_with?("#") %>><%= item.label %></a>
     <% end %>
   </nav>
 </header>
